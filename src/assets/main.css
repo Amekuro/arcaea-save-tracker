@@ -1,0 +1,13 @@
+/* 移除所有多余的自定义样式，完全交由 Element Plus 原生控制以遵循规范 */
+body {
+  margin: 0;
+  /* Element Plus 能够自动根据 html.dark 处理深色/浅色背景和字体颜色 */
+  background-color: var(--el-bg-color);
+  color: var(--el-text-color-primary);
+  font-family: var(--el-font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+}

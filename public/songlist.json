@@ -1,0 +1,4935 @@
+[
+  {
+    "id": "sayonarahatsukoi",
+    "title": "Sayonara Hatsukoi",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "lostcivilization",
+    "title": "Lost Civilization",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "goodtek",
+    "title": "GOODTEK (Arcaea Edit)",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "viyella",
+    "title": "cry of viyella",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "rise",
+    "title": "Rise",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lucifer",
+    "title": "Lucifer",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "fairytale",
+    "title": "Fairytale",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "hearditsaid",
+    "title": "I've heard it said",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "babaroque",
+    "title": "Babaroque",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "memoryfactory",
+    "title": "memoryfactory.lzh",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "snowwhite",
+    "title": "Snow White",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "relentless",
+    "title": "Relentless",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "shadesoflight",
+    "title": "Shades of Light in a Transcendent Realm",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "vexaria",
+    "title": "Vexaria",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "essenceoftwilight",
+    "title": "Essence of Twilight",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "qualia",
+    "title": "qualia -ideaesthesia-",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "pragmatism",
+    "title": "PRAGMATISM",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "sheriruth",
+    "title": "Sheriruth",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lumia",
+    "title": "Lumia",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "dement",
+    "title": "Dement ~after legend~",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "dandelion",
+    "title": "Dandelion",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "anokumene",
+    "title": "Anökumene",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "infinityheaven",
+    "title": "Infinity Heaven",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "partyvinyl",
+    "title": "Party Vinyl",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "flashback",
+    "title": "Flashback",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "flyburg",
+    "title": "Flyburg and Endroll",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nirvluce",
+    "title": "Nirv lucE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "paradise",
+    "title": "Paradise",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "brandnewworld",
+    "title": "Brand new world",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dataerror",
+    "title": "DataErr0r",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "crosssoul",
+    "title": "CROSS†SOUL",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "yourvoiceso",
+    "title": "Your voice so... feat. Such",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "chronostasis",
+    "title": "Chronostasis",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "kanagawa",
+    "title": "Kanagawa Cyber Culvert",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "moonlightofsandcastle",
+    "title": "Moonlight of Sand Castle",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "reconstruction",
+    "title": "REconstruction",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "evoltex",
+    "title": "Evoltex (poppi'n mix)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "oracle",
+    "title": "Oracle",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aterlbus",
+    "title": "αterlβus",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "clotho",
+    "title": "Clotho and the stargazer",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "impurebird",
+    "title": "Impure Bird",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ignotus",
+    "title": "Ignotus",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "lethaeus",
+    "title": "Lethaeus",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "romancewars",
+    "title": "Romance Wars",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blossoms",
+    "title": "Blossoms",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "moonheart",
+    "title": "Moonheart",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "genesis",
+    "title": "Genesis",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "harutopia",
+    "title": "Harutopia ~Utopia of Spring~",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "auxesia",
+    "title": "Auxesia",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "rabbitintheblackroom",
+    "title": "Rabbit In The Black Room",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "modelista",
+    "title": "Modelista",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "soundwitch",
+    "title": "SOUNDWiTCH",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "trappola",
+    "title": "trappola bewitching",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "iconoclast",
+    "title": "Iconoclast",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "conflict",
+    "title": "conflict",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "axiumcrisis",
+    "title": "Axium Crisis",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "grievouslady",
+    "title": "Grievous Lady",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dreaminattraction",
+    "title": "Dreamin' Attraction!!",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "redandblue",
+    "title": "Red and Blue",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "onelastdrive",
+    "title": "One Last Drive",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "surrender",
+    "title": "Surrender",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "yozakurafubuki",
+    "title": "Yosakura Fubuki",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "cyanine",
+    "title": "cyanine",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dreamgoeson",
+    "title": "Dream goes on",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "journey",
+    "title": "Journey",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "specta",
+    "title": "Specta",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "quon",
+    "title": "Quon",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "syro",
+    "title": "Syro",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "reinvent",
+    "title": "Reinvent",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "silentrush",
+    "title": "Silent Rush",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "singularity",
+    "title": "Singularity",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "memoryforest",
+    "title": "Memory Forest",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "strongholds",
+    "title": "Strongholds",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nexttoyou",
+    "title": "next to you",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "metallicpunisher",
+    "title": "Metallic Punisher",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blaster",
+    "title": "Blaster",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "guardina",
+    "title": "γuarδina",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "carminescythe",
+    "title": "carmine:scythe",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "bethere",
+    "title": "Be There",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "cyberneciacatharsis",
+    "title": "Cybernecia Catharsis",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "callmyname",
+    "title": "Call My Name feat. Yukacco",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "inkarusi",
+    "title": "inkar-usi",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "mazenine",
+    "title": "Maze No.9",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "themessage",
+    "title": "The Message",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "sulfur",
+    "title": "Sulfur",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "halcyon",
+    "title": "Halcyon",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "etherstrike",
+    "title": "Ether Strike",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "fractureray",
+    "title": "Fracture Ray",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "suomi",
+    "title": "Suomi",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "bookmaker",
+    "title": "Bookmaker (2D Version)",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "darakunosono",
+    "title": "Illegal Paradise",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dropdead",
+    "title": "dropdead",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "fallensquare",
+    "title": "Fallensquare",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nhelv",
+    "title": "Nhelv",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "espebranch",
+    "title": "LunarOrbit -believe in the Espebranch road-",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "purgatorium",
+    "title": "Purgatorium",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "hikari",
+    "title": "Hikari",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "stager",
+    "title": "STAGER (ALL STAGE CLEAR)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hallofmirrors",
+    "title": "Hall of Mirrors",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "linearaccelerator",
+    "title": "Linear Accelerator",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tiferet",
+    "title": "Tiferet",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "alexandrite",
+    "title": "Alexandrite",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "rugie",
+    "title": "Rugie",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "astraltale",
+    "title": "Astral tale",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "phantasia",
+    "title": "Phantasia",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "empireofwinter",
+    "title": "Empire of Winter",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "merlin",
+    "title": "MERLIN",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "dxfullmetal",
+    "title": "DX Choseinou Full Metal Shojo",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "omakeno",
+    "title": "OMAKENO Stroke",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "scarletlance",
+    "title": "Scarlet Lance",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ouroboros",
+    "title": "ouroboros -twin stroke of the end-",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "libertas",
+    "title": "Libertas",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "solitarydream",
+    "title": "Solitary Dream",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "antithese",
+    "title": "Antithese",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "corruption",
+    "title": "Corruption",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blackterritory",
+    "title": "Black Territory",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "viciousheroism",
+    "title": "Vicious Heroism",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "cyaegha",
+    "title": "Cyaegha",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "revixy",
+    "title": "ReviXy",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "grimheart",
+    "title": "Grimheart",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "vector",
+    "title": "VECTOЯ",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "supernova",
+    "title": "SUPERNOVA",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dottodot",
+    "title": "Dot to Dot feat. shully",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "garakuta",
+    "title": "Garakuta Doll Play",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ikazuchi",
+    "title": "Ikazuchi",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "worldvanquisher",
+    "title": "World Vanquisher",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dreadnought",
+    "title": "Dreadnought",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "particlearts",
+    "title": "particlearts",
+    "difficulties": []
+  },
+  {
+    "id": "vindication",
+    "title": "Vindication",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "heavensdoor",
+    "title": "Heavensdoor",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "ringedgenesis",
+    "title": "Ringed Genesis",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "chelsea",
+    "title": "Chelsea",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aiueoon",
+    "title": "AI[UE]OON",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "melodyoflove",
+    "title": "A Wandering Melody of Love",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tiemedowngently",
+    "title": "Tie me down gently",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "valhallazero",
+    "title": "Valhalla:0",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mirzam",
+    "title": "Mirzam",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "diode",
+    "title": "Diode",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "freefall",
+    "title": "FREEF4LL",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "gloryroad",
+    "title": "GLORY：ROAD",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "monochromeprincess",
+    "title": "Monochrome Princess",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "heavenlycaress",
+    "title": "Heavenly caress",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "senkyou",
+    "title": "Senkyou",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "filament",
+    "title": "Filament",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "avantraze",
+    "title": "Avant Raze",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "battlenoone",
+    "title": "BATTLE NO.1",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "laqryma",
+    "title": "La'qryma of the Wasteland",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "einherjar",
+    "title": "Einherjar Joker",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "izana",
+    "title": "IZANA",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "saikyostronger",
+    "title": "SAIKYO STRONGER",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "worldexecuteme",
+    "title": "world.execute(me);",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blrink",
+    "title": "BLRINK",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "oblivia",
+    "title": "Oblivia",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "amygdata",
+    "title": "amygdata",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "corpssansorganes",
+    "title": "corps-sans-organes",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "equilibrium",
+    "title": "Equilibrium",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "antagonism",
+    "title": "Antagonism",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lostdesire",
+    "title": "Lost Desire",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dantalion",
+    "title": "Dantalion",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ifi",
+    "title": "#1f1e33",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tempestissimo",
+    "title": "Tempestissimo",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "arcahv",
+    "title": "Arcahv",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "altale",
+    "title": "Altale",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "givemeanightmare",
+    "title": "Give Me a Nightmare",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blacklotus",
+    "title": "Black Lotus",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "gekka",
+    "title": "Gekka (Short Version)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "vividtheory",
+    "title": "Vivid Theory",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "onefr",
+    "title": "1F√",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "scarletcage",
+    "title": "Scarlet Cage",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "faintlight",
+    "title": "Faint Light (Arcaea Edit)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feelssoright",
+    "title": "Feels So Right feat. Renko",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "teriqma",
+    "title": "Teriqma",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "mahoroba",
+    "title": "MAHOROBA",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "badtek",
+    "title": "BADTEK",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "maliciousmischance",
+    "title": "Malicious Mischance",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "gothiveofra",
+    "title": "Got hive of Ra",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "buchigireberserker",
+    "title": "BUCHiGiRE Berserker",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "galaxyfriends",
+    "title": "Galaxy Friends",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "crossover",
+    "title": "CROSS†OVER",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "xeraphinite",
+    "title": "Xeraphinite",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lapis",
+    "title": "Lapis",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "xanatos",
+    "title": "Xanatos",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "purpleverse",
+    "title": "Purple Verse",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "alicealamode",
+    "title": "Alice à la mode",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eccentrictale",
+    "title": "Eccentric Tale",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "alicessuitcase",
+    "title": "Alice's Suitcase",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "jump",
+    "title": "Jump",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "felis",
+    "title": "Felis",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "besideyou",
+    "title": "Beside You",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "heartjackin",
+    "title": "Heart Jackin'",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "toaliceliddell",
+    "title": "To: Alice Liddell",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lazyaddiction",
+    "title": "Lazy Addiction",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dazzlehop",
+    "title": "Dazzle hop",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "viyellastears",
+    "title": "Viyella's Tears",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "omegafour",
+    "title": "ω4",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aprilshowers",
+    "title": "April showers",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "seventhsense",
+    "title": "7thSense",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "oshamascramble",
+    "title": "Oshama Scramble!",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "amazingmightyyyy",
+    "title": "AMAZING MIGHTYYYY!!!!",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "climax",
+    "title": "Climax",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lastcelebration",
+    "title": "Last Celebration",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "gou",
+    "title": "Misdeed -la bonté de Dieu et l'origine du mal-",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "glow",
+    "title": "Glow",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "attraqtia",
+    "title": "AttraqtiA",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "enchantedlove",
+    "title": "enchanted love",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "take",
+    "title": "Bamboo",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "gimmedablood",
+    "title": "GIMME DA BLOOD",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "bassline",
+    "title": "Can I Friend You on Bassbook? Lol",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lifeispiano",
+    "title": "Life is PIANO",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "paperwitch",
+    "title": "Paper Witch",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "crystalgravity",
+    "title": "Crystal Gravity",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "farawaylight",
+    "title": "Far Away Light",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "loschen",
+    "title": "Löschen",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aegleseeker",
+    "title": "Aegleseeker",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "coastalhighway",
+    "title": "Coastal Highway",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "odysseia",
+    "title": "ΟΔΥΣΣΕΙΑ",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "overwhelm",
+    "title": "Overwhelm",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "vandalism",
+    "title": "Vandalism",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "turbocharger",
+    "title": "Turbocharger",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "theultimacy",
+    "title": "THE ULTIMACY",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "rekkaresonance",
+    "title": "REKKA RESONANCE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "kyogenkigo",
+    "title": "False Embellishment",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "hivemind",
+    "title": "HIVEMIND",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "seclusion",
+    "title": "Seclusion",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "smallcloud",
+    "title": "Small Cloud Sugar Candy",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "alterale",
+    "title": "AlterAle",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "divinelight",
+    "title": "Divine Light of Myriad",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mazymetroplex",
+    "title": "Mazy Metroplex",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "quonwacca",
+    "title": "Quon",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "withu",
+    "title": "with U",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "genocider",
+    "title": "GENOCIDER",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "letyoudivermx",
+    "title": "Let you DIVE! (nitro rmx)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "sheriruthrmx",
+    "title": "Sheriruth (Laur Remix)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eveninginscarlet",
+    "title": "Evening in Scarlet",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "bluecomet",
+    "title": "blue comet",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "energysynergymatrix",
+    "title": "ENERGY SYNERGY MATRIX",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "gengaozo",
+    "title": "G e n g a o z o",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "goldenslaughterer",
+    "title": "goldenslaughterer",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lastendconductor",
+    "title": "lastendconductor",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "redolentshape",
+    "title": "Redolent Shape",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "cosmica",
+    "title": "Cosmica",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ascent",
+    "title": "Ascent",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "livefastdieyoung",
+    "title": "Live Fast Die Young",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "summerfireworks",
+    "title": "Summer Fireworks of Love",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "firstsnow",
+    "title": "First Snow",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "bluerose",
+    "title": "Blue Rose",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blockedlibrary",
+    "title": "Blocked Library",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "neokosmo",
+    "title": "nέο κόsmo",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lightningscrew",
+    "title": "Lightning Screw",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lightsofmuse",
+    "title": "Lights of Muse",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "finalstep",
+    "title": "Final Step!",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "akinokagerou",
+    "title": "Haze of Autumn",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "medusa",
+    "title": "Medusa",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "init",
+    "title": "init()",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "internetoverdose",
+    "title": "INTERNET OVERDOSE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "sakurafubuki",
+    "title": "Sakura Fubuki",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nulctrl",
+    "title": "NULCTRL",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "macromod",
+    "title": "Macrocosmic Modulation",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "neowings",
+    "title": "NEO WINGS",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "kissinglucifer",
+    "title": "Kissing Lucifer",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "avril",
+    "title": "Ävril -Flicka i krans-",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aurgelmir",
+    "title": "Aurgelmir",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "headbonkache",
+    "title": "Head BONK ache",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ddd",
+    "title": "DDD",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "prism",
+    "title": "Prism",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "protoflicker",
+    "title": "Protoflicker",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "stasis",
+    "title": "Stasis",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "picopicotranslation",
+    "title": "PICO-Pico-Translation!",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nekonote",
+    "title": "Dancin' on a Cat's Paw",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mu",
+    "title": "μ",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "sanskia",
+    "title": "san skia",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "altair",
+    "title": "Altair (feat. *spiLa*)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mukishitsu",
+    "title": "Redraw the Colorless World",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "trapcrow",
+    "title": "Trap Crow",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "pupa",
+    "title": "PUPA",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "defection",
+    "title": "Defection",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "infinitestrife",
+    "title": "Infinite Strife,",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "worldender",
+    "title": "World Ender",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "pentiment",
+    "title": "Pentiment",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "arcanaeden",
+    "title": "Arcana Eden",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "testify",
+    "title": "Testify",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "lovelessdress",
+    "title": "Loveless Dress",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "last",
+    "title": "Last",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "lasteternity",
+    "title": "Last | Eternity",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "callimakarma",
+    "title": "Callima Karma",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "kokoro",
+    "title": "Heart",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aidrew",
+    "title": "Ai Drew",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "fluffyflash",
+    "title": "FLUFFY FLASH",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "goodbyemerry",
+    "title": "Good bye, Merry-Go-Round.",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lamia",
+    "title": "LAMIA",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "freemyself",
+    "title": "Free Myself",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "cocorocosmetic",
+    "title": "cocoro*cosmetic",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "capella",
+    "title": "Capella",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dialnote",
+    "title": "Dialnote",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tsukinimurakumo",
+    "title": "Tsuki ni Murakumo, Hana ni Kaze",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mantis",
+    "title": "MANTIS (Arcaea Ultra-Bloodrush VIP)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "worldfragments",
+    "title": "World Fragments III(radio edit)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "astrawalkthrough",
+    "title": "Astra walkthrough",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "chronicle",
+    "title": "Chronicle",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nullapophenia",
+    "title": "NULL APOPHENIA",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "crimsonthrone",
+    "title": "Crimson Throne",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "manicjeer",
+    "title": "Manic Jeer",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hiirogekka",
+    "title": "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "letsrock",
+    "title": "Let's Rock (Arcaea mix)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "cycles",
+    "title": "CYCLES",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "maxrage",
+    "title": "MAXRAGE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "infinity",
+    "title": "[X]",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "temptation",
+    "title": "TEmPTaTiON",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "primitivelights",
+    "title": "PRIMITIVE LIGHTS",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "cosmopop",
+    "title": "Cosmo Pop Funclub",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "impact",
+    "title": "IMPACT",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "genesischunithm",
+    "title": "Genesis",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "trrricksters",
+    "title": "Trrricksters!!",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "spidersthread",
+    "title": "Spider's Thread",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lostemotion",
+    "title": "Lost Emotion feat. nomico",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "gimmick",
+    "title": "GIMMICK",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "thesurvivor",
+    "title": "The Survivor (Game Edit)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "newyorkbackraise",
+    "title": "New York Back Raise",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "galacticlove",
+    "title": "Galactic Love",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lawlesspoint",
+    "title": "Lawless Point",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lostintheabyss",
+    "title": "Lost in the Abyss",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hybris",
+    "title": "Hybris (The one who shattered)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tothemilkyway",
+    "title": "To the Milky Way",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "internetyamero",
+    "title": "INTERNET YAMERO",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "bulletwaiting",
+    "title": "Bullet Waiting for Me (James Landino remix)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "devillicsphere",
+    "title": "Devillic Sphere",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lucidtraveler",
+    "title": "Lucid Traveler",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "chaos",
+    "title": "CHAOS",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "usedtobe",
+    "title": "Used to be",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ultimatetaste",
+    "title": "Ultimate taste",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "syuten",
+    "title": "syūten",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "drg",
+    "title": "DRG",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "nnglooms",
+    "title": "99 Glooms",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ii",
+    "title": " ͟͝͞Ⅱ́̕ ",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "magnolia",
+    "title": "Magnolia",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "sacrifice",
+    "title": "SACRIFICE feat. ayame",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "rgb",
+    "title": "RGB",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "waitfordawn",
+    "title": "WAIT FOR DAWN",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ravenspride",
+    "title": "Raven's Pride",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "riseoftheworld",
+    "title": "Rise of the World",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "unknownlevels",
+    "title": "UNKNOWN LEVELS",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "abstrusedilemma",
+    "title": "Abstruse Dilemma",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "matenrou",
+    "title": "Kanjou no Matenrou ～Arr.Demetori",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tothefurthestdream",
+    "title": "To the Furthest Dream",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "remindthesouls",
+    "title": "Remind the Souls (Short Version)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dynitikos",
+    "title": "Dynitikós",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "amekagura",
+    "title": "Amekagura",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "bbkkbkk",
+    "title": "B.B.K.K.B.K.K.",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "primevaltexture",
+    "title": "Primeval Texture",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "technicolour",
+    "title": "Technicolour",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "logos",
+    "title": "Logos",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "egoeimi",
+    "title": "Ego Eimi",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "arghena",
+    "title": "Arghena",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "fantasy",
+    "title": "FANTA5Y",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "transientspace",
+    "title": "Transient Space",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "namelesspassion",
+    "title": "Nameless Passion",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "teravolt",
+    "title": "TeraVolt",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "stratoliner",
+    "title": "Stratoliner",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ouverture",
+    "title": "Ouvertüre",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "xtreme",
+    "title": "XTREME",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "edenwacca",
+    "title": "eden",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "metamysteria",
+    "title": "Meta-Mysteria",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aloneandlorn",
+    "title": "Alone & Lorn",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "wishuponasnow",
+    "title": "Wish Upon a Snow",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "overdrive",
+    "title": "Kanbu de Tomatte Sugu Tokeru",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "felys",
+    "title": "felys final remix",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "onandon",
+    "title": "On And On!! feat. Jenga",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lightmyway",
+    "title": "LIVHT MY WΔY",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hotarubinoyuki",
+    "title": "Hotarubi no Yuki",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "theformula",
+    "title": "The Formula",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "lunarossa",
+    "title": "Luna Rossa",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "jingle",
+    "title": "Jingle",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "innocence",
+    "title": "Innocence",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "ionostream",
+    "title": "IONOSTREAM",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "alephzero",
+    "title": "Aleph-0",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "masqueradelegion",
+    "title": "Masquerade Legion",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "kyorenromance",
+    "title": "KYOREN ROMANCE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "qovat",
+    "title": "Qovat",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hellohell",
+    "title": "HELLOHELL",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "ichirin",
+    "title": "〇、",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "awakeninruins",
+    "title": "Awaken In Ruins",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "morningloom",
+    "title": "MORNINGLOOM",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "lethalvoltage",
+    "title": "Lethal Voltage",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mirinae",
+    "title": "MIRINAE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ultradiaxon",
+    "title": "ultradiaxon-N3",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "leaveallbehind",
+    "title": "Leave All Behind",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "distortedfate",
+    "title": "Distorted Fate",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "floatingworld",
+    "title": "Floating World",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "chromafill",
+    "title": "Chromafill",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "desive",
+    "title": "Désive",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "epicurus",
+    "title": "Hidden Rainbows of Epicurus",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "tasogare",
+    "title": "Twilight Concerto",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "oldschoolsalvage",
+    "title": "Old School Salvage",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "beautifuldreamer",
+    "title": "Beautiful Dreamer",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "backtobasics",
+    "title": "Back to Basics",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "stargateextreme",
+    "title": "STARGATE EXTREME",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "signof",
+    "title": "Sign of \"10.5km\"",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "temptationgc",
+    "title": "10pt8ion",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "blackmind",
+    "title": "Black MInD",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hypervision",
+    "title": "HYPER VISION",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "distortionhuman",
+    "title": "Distortion Human",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "shrink",
+    "title": "shrink",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "invain",
+    "title": "In Vain",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "hypnotize",
+    "title": "Hypnotize",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "ashenboundary",
+    "title": "Ashen 6oundary",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "judgement",
+    "title": "Judgement",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "alterego",
+    "title": "ALTER EGO",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "epitaxy",
+    "title": "epitaxy",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "waltzforlorelei",
+    "title": "Waltz for Lorelei",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "dualdoom",
+    "title": "Dual Doom Deathmatch",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "invertedworld",
+    "title": "Inverted World",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "mvurbd",
+    "title": "MVURBD",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "vulcanus",
+    "title": "Vulcānus",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "rainofconflict",
+    "title": "Rain of Conflict in a Radiant Abyss",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "saintorsinner",
+    "title": "Saint or Sinner",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "hailstone",
+    "title": "Hailstone",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "furetemitai",
+    "title": "FURETE-MITAI",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "gensounosatellite",
+    "title": "Gensou no Satellite",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "prayer",
+    "title": "Prayer",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "crimsonquartz",
+    "title": "Crimson Quartz",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "thirdsun",
+    "title": "Third Sun",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "spiritdauntless",
+    "title": "Spirit of the Dauntless",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "diesirae",
+    "title": "Dies irae",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "astralexe",
+    "title": "astral.exe",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "liftoff",
+    "title": "LiftOff",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "superambulance",
+    "title": "SUPER AMBULANCE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dontfightmusic",
+    "title": "Don't Fight The Music",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "andrevivemelody",
+    "title": "And Revive The Melody",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "swansong",
+    "title": "Swan Song",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "renegade",
+    "title": "Renegade",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "raysofremnant",
+    "title": "Rays of Remnant",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "breachoffaith",
+    "title": "Breach of Faith",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "lamentrain",
+    "title": "Lament Rain",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "designant",
+    "title": "Designant.",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "astralquant",
+    "title": "Astral Quantization",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "ignition",
+    "title": "Ignition",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blazingair",
+    "title": "BlazinG AIR",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "eightem",
+    "title": "8-EM",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "daat",
+    "title": "DA'AT -The First Seeker of Souls-",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "breakbreak",
+    "title": "BREaK! BREaK! BREaK!",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "straightintolights",
+    "title": "Straight into the lights",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "virtus",
+    "title": "ViRTUS",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "yomibitoshirazu",
+    "title": "yomibito_shirazu",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "aethercrest",
+    "title": "Aether Crest: Astral",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "heartache",
+    "title": "Heartache",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "deathbyglamour",
+    "title": "Death By Glamour",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "yourbestnightmare",
+    "title": "Your Best Nightmare",
+    "difficulties": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "lastgoodbye",
+    "title": "Last Goodbye",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "megalovania",
+    "title": "MEGALOVANIA",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "megalovaniarmx",
+    "title": "MEGALOVANIA (Camellia Remix)",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "placebobattler",
+    "title": "Placebo♥Battler",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blackmirror",
+    "title": "Black Mirror on the Wall",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "shinchoku",
+    "title": "Shinchoku Doudesuka?",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "trpno",
+    "title": "TRPNO",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tau",
+    "title": "τ (tau)",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dullblade",
+    "title": "Dull Blade",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "wontbackdown",
+    "title": "Won't Back Down",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dontdie",
+    "title": "Don't Die",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "ladymadestar",
+    "title": "Ladymade Star",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "endmoonlight",
+    "title": "End of The Moonlight",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "uad",
+    "title": "U.A.D",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "oblivion",
+    "title": "OBLIVION",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "nightmare",
+    "title": "Nightmare",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "tictactoe",
+    "title": "Tic! Tac! Toe!",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "satisfaction",
+    "title": "SATISFACTION",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "someday",
+    "title": "Someday",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "miles",
+    "title": "Miles",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "iwantyou",
+    "title": "I want You",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "syriana",
+    "title": "Syriana",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "liar",
+    "title": "Liar",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "blythe",
+    "title": "BlythE",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "wereallgonnadie",
+    "title": "We're All Gonna Die",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "dematerialized",
+    "title": "Dematerialized",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "seethelights",
+    "title": "See the Lights!",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "scarletlunar",
+    "title": "Scarlet Lunar Empress",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "dualdependency",
+    "title": "Dual Dependency",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "lilly",
+    "title": "Lilly",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "extradimensional",
+    "title": "Extradimensional Cosmic Phenomenon",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "disintegration",
+    "title": "disintegration",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "factorder",
+    "title": "Factorder",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "incompleteone",
+    "title": "incomplete the one",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "chaosblast",
+    "title": "CHAOSBLAST",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "welcomequeen",
+    "title": "Welcome, Queen of Fiction.",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "altergate",
+    "title": "AlterGate",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "acheron",
+    "title": "Acheron",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "eternitybreak",
+    "title": "Eternity Break",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "rostpagegene",
+    "title": "ROST PAGE GENE",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "violaillyria",
+    "title": "Viola Illyria",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "vainspire",
+    "title": "Vainspire",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "nowayback",
+    "title": "No Way Back",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "andorxor",
+    "title": "ANDORXOR",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "undyingmacula",
+    "title": "Undying Macula",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "awakening",
+    "title": "Wake in Hour",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "mod",
+    "title": "mod",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "particle",
+    "title": "Particle",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "paradoxpalette",
+    "title": "Paradox Palette",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "xxium",
+    "title": "Xxium and Purple haze",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "angelsboundary",
+    "title": "Angel's Boundary",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "xterfusion",
+    "title": "Xterfusion",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "infinitedim",
+    "title": "INFINITE DIMENSION",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "incarnator",
+    "title": "INCARNATOR₀₀",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "zephyrlast",
+    "title": "zephyrlasting",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "marenyx",
+    "title": "MARENYX",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "codeoblivion",
+    "title": "Code: Oblivion",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "azalea",
+    "title": "ΛZΛLEΛ",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "tabootears",
+    "title": "taboo tears you up 2017",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "grandspell",
+    "title": "Grandspell",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "undefined",
+    "title": "undefined",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mask",
+    "title": "~_+",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "paranoidarc",
+    "title": "Paranoid Arc",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "subsphere",
+    "title": "Subsphere in Eclosion",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "theraft",
+    "title": "The 'Raft' taught me: your heart will always find a way.",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "omajinai",
+    "title": "OMAJINAI",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "chaintonite",
+    "title": "CHAIN2NITE",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "onestepcloser",
+    "title": "One Step Closer",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "mylifeismine",
+    "title": "My life is mine alone!",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "meltyrhapsody",
+    "title": "Melty Rhapsody",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "signal",
+    "title": "Signal",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "caramelpop",
+    "title": "Gimme Caramel Popcorn!",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "shinoukyoseki",
+    "title": "The Forgotten Forest Haven",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "unknownnum",
+    "title": "+1(UNKNOWN)-NUMBER",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "thirdavenue",
+    "title": "3rd Avenue",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "vallista",
+    "title": "Vallista",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "goodrage",
+    "title": "GOODRAGE",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "cryogenic",
+    "title": "Cryogenic",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "desertrealm",
+    "title": "Desertrealm",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "spiderdance",
+    "title": "Spider Dance",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "spearofjustice",
+    "title": "Spear of Justice",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "asgore",
+    "title": "ASGORE",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "id": "mirrorrmx",
+    "title": "MIRROR - kamome sano remix",
+    "difficulties": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "riotsystem",
+    "title": "Riot in the System",
+    "difficulties": [
+      0,
+      1,
+      2,
+      4
+    ]
+  }
+]
