@@ -100,7 +100,7 @@ async function run() {
       const namePart = jacket.replace(/^1080_/, '').replace('.jpg', '')
       const destFile = path.join(songDestDir, `${namePart}.avif`)
 
-      if (fs.existsSync(destFile)) {
+      if (!process.env.FORCE_REBUILD && fs.existsSync(destFile)) {
         skippedCount++
         continue
       }

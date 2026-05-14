@@ -5,7 +5,17 @@ on:
     # 每天 UTC 时间 0:30 执行一次检查 (北京时间上午 8:30)
     - cron: '30 0 * * *'
   workflow_dispatch:
-    # 允许手动在 GitHub Actions 页面触发
+    inputs:
+      force_rebuild:
+        description: '强制重新压制所有曲绘 (Force Rebuild Images)'
+        required: false
+        type: boolean
+        default: false
+      force_fetch:
+        description: '强制从 Wiki 拉取定数表 (Force Fetch Constants)'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write # 允许工作流推送代码
@@ -42,10 +52,14 @@ jobs:
         
       - name: Run Pipeline Stage 3 - Process Images
         run: node scripts/03_process_images.js
+        env:
+          FORCE_REBUILD: ${{ github.event.inputs.force_rebuild }}
         
       - name: Run Pipeline Stage 4 - Fetch Constants (Immediate sync attempt)
         # 即使这里成功拉取，也会经过智能判定。如果完美同步，直接收工。
         run: node scripts/04_fetch_constants.js
+        env:
+          FORCE_FETCH: ${{ github.event.inputs.force_fetch }}
         
       - name: Build Vue App
         run: npm run build
