@@ -88,7 +88,7 @@
       <el-table-column prop="rank" label="排名" width="80" align="center" sortable>
         <template #default="scope">
           <div :style="{ fontWeight: 'bold', color: scope.row.rank <= 30 ? 'var(--el-color-danger)' : 'var(--el-text-color-secondary)' }">
-            #{{ scope.row.rank }}
+            # {{ scope.row.rank }}
           </div>
         </template>
       </el-table-column>
@@ -116,15 +116,15 @@
       <!-- 曲目名称列 -->
       <el-table-column label="曲目 / 艺术家" min-width="200" sortable :sort-method="(a, b) => getLocalizedData(a.title_localized).text.localeCompare(getLocalizedData(b.title_localized).text)">
         <template #default="scope">
-          <div class="song-title">
+          <MarqueeText class="song-title">
             {{ getLocalizedData(scope.row.title_localized).text }}
             <span class="lang-fallback-badge">
               {{ getLocalizedData(scope.row.title_localized).lang }}
             </span>
-          </div>
-          <div class="song-id-sub">
+          </MarqueeText>
+          <MarqueeText class="song-id-sub">
             {{ getLocalizedData(scope.row.artist_localized).text }}
-          </div>
+          </MarqueeText>
         </template>
       </el-table-column>
       
@@ -190,6 +190,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { Picture } from '@element-plus/icons-vue'
+import MarqueeText from './MarqueeText.vue'
 
 const props = defineProps({
   allData: {
@@ -222,32 +223,38 @@ const currentLangCode = ref('zh-Hans')
 const langOrder = ['zh-Hans', 'zh-Hant', 'ja', 'en']
 
 /**
- * 智能获取多语言对象并在发生回退时提供感知信息
+ * 获取多语言对象中的文本，并统一返回“极客风”的语言标签
  */
+const langMap = {
+  'zh-Hans': '简',
+  'zh-Hant': '繁',
+  'ja': 'JP',
+  'en': 'EN'
+}
+
 const getLocalizedData = (locObj) => {
-  if (!locObj) return { text: 'Unknown', isFallback: false, lang: 'none' }
+  if (!locObj) return { text: 'Unknown', lang: 'EN' }
   
   const targetLang = currentLangCode.value
-  // 如果首选语言存在，直接返回且不是 fallback
   if (locObj[targetLang]) {
-    return { text: locObj[targetLang], isFallback: false, lang: targetLang }
+    return { text: locObj[targetLang], lang: langMap[targetLang] }
   }
   
-  // 否则，按降级顺序查找
-  for (const lang of langOrder) {
+  // 严格按照优先级回退 (由于 Arcaea 是英国游戏，en 是兜底选项，而 ja 是大部分原曲语言)
+  const fallbackOrder = ['zh-Hans', 'zh-Hant', 'ja', 'en']
+  for (const lang of fallbackOrder) {
     if (locObj[lang]) {
-      const displayLangCode = lang === 'zh-Hans' ? '简' : lang === 'zh-Hant' ? '繁' : lang === 'ja' ? 'JP' : 'EN'
-      return { text: locObj[lang], isFallback: true, lang: displayLangCode }
+      return { text: locObj[lang], lang: langMap[lang] }
     }
   }
   
-  // 极端情况：连常见语言都没有，随便挑一个存在的
+  // 极端兜底情况
   const firstAvailable = Object.keys(locObj)[0]
   if (firstAvailable) {
-    return { text: locObj[firstAvailable], isFallback: true, lang: firstAvailable.substring(0, 2).toUpperCase() }
+    return { text: locObj[firstAvailable], lang: langMap[firstAvailable] || firstAvailable.substring(0, 2).toUpperCase() }
   }
   
-  return { text: 'Unknown', isFallback: false, lang: 'none' }
+  return { text: 'Unknown', lang: 'EN' }
 }
 
 // 提取数据中所有出现过的曲包和难度评级，供下拉框使用
