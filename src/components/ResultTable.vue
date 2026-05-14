@@ -152,7 +152,7 @@
       </el-table-column>
       
       <!-- 分数与评级列 -->
-      <el-table-column prop="score" label="成绩 & 评级" min-width="180" sortable>
+      <el-table-column prop="score" label="成绩 & 评级" min-width="200" sortable>
         <template #default="scope">
           <div style="display: flex; align-items: center; gap: 8px;">
             <span style="font-family: monospace; font-size: 16px; font-weight: bold;">{{ formatScore(scope.row.score) }}</span>
@@ -160,11 +160,13 @@
               {{ scope.row.clearTypeLabel }}
             </el-tag>
           </div>
-          <!-- 判定明细：Pure (+Shiny) / Far / Lost -->
-          <div style="font-size: 11px; color: var(--el-text-color-secondary); margin-top: 4px;">
-            <span style="color: var(--el-color-primary);">Pure: {{ scope.row.perfectCount }} <span style="color: var(--el-color-warning);">(+{{ scope.row.shinyPerfectCount }})</span></span>
-            <span style="color: var(--el-color-warning); margin-left: 8px;">Far: {{ scope.row.nearCount }}</span>
-            <span style="color: var(--el-color-danger); margin-left: 8px;">Lost: {{ scope.row.missCount }}</span>
+          <div style="font-size: 11px; margin-top: 2px; display: flex; gap: 8px;">
+            <span style="color: var(--el-color-primary);">Pure: {{ scope.row.perfectCount }}</span>
+            <span style="color: var(--el-color-warning); opacity: 0.85;">(-{{ scope.row.perfectCount - scope.row.shinyPerfectCount }})</span>
+          </div>
+          <div style="font-size: 11px; margin-top: 2px; display: flex; gap: 8px;">
+            <span style="color: var(--el-color-warning);">Far: {{ scope.row.nearCount }}</span>
+            <span style="color: var(--el-color-danger);">Lost: {{ scope.row.missCount }}</span>
           </div>
         </template>
       </el-table-column>

@@ -121,9 +121,16 @@ const contentRef = ref(null)
 let registration = null
 let resizeObs = null
 let intersectObs = null
+let mutationObs = null
 
 const check = () => {
   if (!wrapperRef.value || !contentRef.value) return
+
+  // 先临时重置 transform，否则 scrollWidth 会受到当前偏移量的影响
+  if (registration) {
+    contentRef.value.style.transform = ''
+  }
+
   const overflow = contentRef.value.scrollWidth - wrapperRef.value.offsetWidth
 
   if (overflow > 1) {
@@ -132,7 +139,7 @@ const check = () => {
         wrapperEl: wrapperRef.value,
         contentEl: contentRef.value,
         dist: overflow,
-        visible: false,     // 由 IntersectionObserver 控制
+        visible: false,
         maskLeft: false,
         maskRight: false
       }
@@ -153,17 +160,23 @@ const check = () => {
 onMounted(() => {
   nextTick(check)
 
-  // 监听容器/内容尺寸变化（如语言切换导致文本长度改变）
   resizeObs = new ResizeObserver(check)
   if (wrapperRef.value) resizeObs.observe(wrapperRef.value)
-  if (contentRef.value) resizeObs.observe(contentRef.value)
 
-  // 监听元素是否进入视口，不可见的元素跳过更新
+  // 监听插槽内容文本变化（语言切换时 ResizeObserver 检测不到，因为 overflow:hidden 限制了布局尺寸）
+  mutationObs = new MutationObserver(check)
+  if (contentRef.value) {
+    mutationObs.observe(contentRef.value, {
+      childList: true,
+      subtree: true,
+      characterData: true
+    })
+  }
+
   intersectObs = new IntersectionObserver(
     ([entry]) => {
       if (registration) {
         registration.visible = entry.isIntersecting
-        // 刚进入视口时，立刻同步到当前全局状态
         if (entry.isIntersecting) {
           const x = calcX(registration)
           registration.contentEl.style.transform = `translateX(${-x}px)`
@@ -175,13 +188,14 @@ onMounted(() => {
         }
       }
     },
-    { rootMargin: '50px' }  // 提前 50px 开始更新，消除滚入时的视觉闪烁
+    { rootMargin: '50px' }
   )
   if (wrapperRef.value) intersectObs.observe(wrapperRef.value)
 })
 
 onUnmounted(() => {
   if (resizeObs) resizeObs.disconnect()
+  if (mutationObs) mutationObs.disconnect()
   if (intersectObs) intersectObs.disconnect()
   if (registration) { unregister(registration); registration = null }
 })
