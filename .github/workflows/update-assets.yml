@@ -1,0 +1,70 @@
+name: Auto Update Arcaea Assets
+
+on:
+  schedule:
+    # 每天 UTC 时间 0:30 执行一次检查 (北京时间上午 8:30)
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+    # 允许手动在 GitHub Actions 页面触发
+
+permissions:
+  contents: write # 允许工作流推送代码
+
+jobs:
+  update-assets:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Install Sharp for Linux
+        # Sharp 在不同平台需要专门编译，CI 环境需要确保正确安装了原生依赖
+        run: npm install --os=linux --cpu=x64 sharp
+        
+      - name: Install Unzip
+        run: sudo apt-get install -y unzip
+        
+      - name: Run Pipeline Stage 1 - Download APK
+        run: node scripts/01_download_apk.js
+        
+      - name: Run Pipeline Stage 2 - Extract Assets
+        run: node scripts/02_extract_assets.js
+        
+      - name: Run Pipeline Stage 3 - Process Images
+        run: node scripts/03_process_images.js
+        
+      - name: Run Pipeline Stage 4 - Fetch Constants (Immediate sync attempt)
+        # 即使这里成功拉取，也会经过智能判定。如果完美同步，直接收工。
+        run: node scripts/04_fetch_constants.js
+        
+      - name: Build Vue App
+        run: npm run build
+        
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git status
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes_exist=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes_exist=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Commit and Push Assets
+        if: steps.check_changes.outputs.changes_exist == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/ public/songs/
+          git commit -m "Auto-update Arcaea assets to latest version [skip ci]"
+          git push

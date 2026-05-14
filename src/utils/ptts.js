@@ -1,14 +1,16 @@
 import initSqlJs from 'sql.js'
 import sqlWasmUrl from 'sql.js/dist/sql-wasm.wasm?url'
+import { parseSongMetadata } from './songDataParser.js'
 
 /**
  * 核心逻辑：解析 Arcaea st3 (SQLite) 文件并计算 PTT
  * @param {ArrayBuffer} fileBuffer st3 文件的二进制数据
  * @param {Array} songlistData 从本地 public/songlist.json 获取的歌曲映射表
+ * @param {Array} packlistData 从本地 public/packlist.json 获取的曲包映射表
  * @param {Object} constantsData 从 wiki 获取的曲目定数表 ChartConstant.json
  * @returns {Object} 包含计算完成的 b30 列表、所有成绩列表及 b30 平均值
  */
-export async function parseSt3(fileBuffer, songlistData, constantsData) {
+export async function parseSt3(fileBuffer, songlistData, packlistData, constantsData) {
   // 1. 初始化 sql.js。使用 Vite 的 ?url 显式导入 wasm 路径，避免路径和 MIME 类型错误
   const SQL = await initSqlJs({
     locateFile: () => sqlWasmUrl
@@ -87,15 +89,17 @@ export async function parseSt3(fileBuffer, songlistData, constantsData) {
       if (ptt < 0) ptt = 0; // PTT 不会跌到 0 以下
     }
     
-    // 寻找可读的歌曲名称
+    // 寻找该首歌曲在 songlist 中的元数据
     const songInfo = songlistData.find(s => s.id === songId);
-    const title = songInfo ? songInfo.title : songId;
+    
+    // 使用抽离出来的解析器统一处理多语言、多难度覆盖以及展平搜索数组
+    const metadata = parseSongMetadata(songInfo, songId, songDifficulty, packlistData);
     
     // 解析 Clear Type
     const clearTypeLabels = ['Track Lost', 'Normal Clear', 'Full Recall', 'Pure Memory', 'Easy Clear', 'Hard Clear'];
     const clearTypeLabel = clearTypeLabels[record.clearType] || 'Unknown';
     
-    // 格式化日期 (Arcaea 本地数据库的 date 为秒级时间戳，早期的谱面可能没记录精确时间)
+    // 格式化日期
     let playDate = '早期记录/未知';
     if (record.date > 1000000000) {
       const d = new Date(record.date * 1000);
@@ -104,7 +108,7 @@ export async function parseSt3(fileBuffer, songlistData, constantsData) {
     
     results.push({
       ...record,
-      title,
+      ...metadata, // 注入由 songDataParser 计算出来的各语言数据和曲包信息
       difficultyName: diffNames[songDifficulty] || 'Unknown',
       clearTypeLabel,
       playDate,

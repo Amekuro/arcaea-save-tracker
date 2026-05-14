@@ -32,10 +32,15 @@ import { ref } from 'vue'
 import { UploadFilled, Loading } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { parseSt3 } from '../utils/ptts.js'
-// 导入曲目名称映射（之前用 Python 脚本从 apk 解包出来的）
-import songlistData from '../../public/songlist.json'
+import songlistRaw from '../../public/data/songlist.json'
+// 官方原始的 songlist 外层包了一个 { "songs": [...] }，为了兼容旧代码把它拆出来
+const songlistData = songlistRaw.songs || songlistRaw
+
+import packlistRaw from '../../public/data/packlist.json'
+const packlistData = packlistRaw.packs || packlistRaw
+
 // 导入从 Wiki 拷贝的曲目定数表
-import constantsData from '../assets/ChartConstant.json'
+import constantsData from '../../public/data/ChartConstant.json'
 
 const emit = defineEmits(['processed'])
 const isLoading = ref(false)
@@ -64,9 +69,9 @@ const handleFileChange = async (uploadFile) => {
     }
     
     // 3. 调用工具函数解析 st3 并计算 PTT
-    const result = await parseSt3(arrayBuffer, songlistData, constantsData)
+    const result = await parseSt3(arrayBuffer, songlistData, packlistData, constantsData)
     
-    // 3. 将结果向上传递给父组件 (App.vue)
+    // 4. 将结果向上传递给父组件 (App.vue)
     emit('processed', result)
   } catch (err) {
     console.error('解析错误:', err)

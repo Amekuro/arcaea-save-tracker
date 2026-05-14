@@ -13,35 +13,71 @@
       <el-button type="primary" plain @click="$emit('reset')">重新上传</el-button>
     </div>
 
-    <!-- 筛选/检索工具栏预留区域 -->
+    <!-- 筛选/检索工具栏 -->
     <div class="filter-toolbar">
-      <el-input 
-        v-model="searchQuery" 
-        placeholder="搜索曲目名或内部曲目ID..."
-        clearable 
-        style="width: 250px"
-      />
-      <el-select 
-        v-model="filterDifficulty" 
-        multiple 
-        collapse-tags 
-        collapse-tags-tooltip 
-        placeholder="选择难度" 
-        style="width: 200px"
-      >
-        <el-option label="Past" :value="0" />
-        <el-option label="Present" :value="1" />
-        <el-option label="Future" :value="2" />
-        <el-option label="Beyond" :value="3" />
-        <el-option label="Eternal" :value="4" />
-      </el-select>
-      <el-button disabled>更多筛选 (待开发)</el-button>
+      <div class="filter-row">
+        <el-input 
+          v-model="searchQuery" 
+          placeholder="搜索曲名/ID..."
+          clearable 
+          style="width: 180px"
+        />
+        <el-select v-model="filterDifficulty" multiple collapse-tags collapse-tags-tooltip placeholder="谱面难度" style="width: 160px">
+          <el-option label="Past" :value="0" />
+          <el-option label="Present" :value="1" />
+          <el-option label="Future" :value="2" />
+          <el-option label="Beyond" :value="3" />
+          <el-option label="Eternal" :value="4" />
+        </el-select>
+        <el-select v-model="filterRating" multiple collapse-tags collapse-tags-tooltip placeholder="等级" style="width: 140px">
+          <el-option v-for="r in uniqueRatings" :key="r" :label="r" :value="r" />
+        </el-select>
+        <el-select v-model="filterPack" multiple collapse-tags collapse-tags-tooltip placeholder="所属曲包" style="width: 180px">
+          <el-option v-for="p in uniquePacks" :key="p" :label="p" :value="p" />
+        </el-select>
+        <el-select v-model="filterClearType" multiple collapse-tags collapse-tags-tooltip placeholder="通关状态" style="width: 160px">
+          <el-option label="Track Lost" :value="0" />
+          <el-option label="Normal Clear" :value="1" />
+          <el-option label="Full Recall" :value="2" />
+          <el-option label="Pure Memory" :value="3" />
+          <el-option label="Easy Clear" :value="4" />
+          <el-option label="Hard Clear" :value="5" />
+        </el-select>
+      </div>
+      
+      <div class="filter-row">
+        <span class="filter-label">分数:</span>
+        <el-input-number v-model="filterScoreRange[0]" :min="0" :max="10002222" :step="100000" controls-position="right" style="width: 130px"/>
+        <span class="filter-separator">-</span>
+        <el-input-number v-model="filterScoreRange[1]" :min="0" :max="10002222" :step="100000" controls-position="right" style="width: 130px"/>
+        
+        <span class="filter-label" style="margin-left: 10px;">日期:</span>
+        <el-date-picker
+          v-model="filterDateRange"
+          type="daterange"
+          range-separator="至"
+          start-placeholder="开始"
+          end-placeholder="结束"
+          style="width: 240px"
+        />
+        
+        <span class="filter-label" style="margin-left: 10px;">首选语言:</span>
+        <el-select v-model="currentLangCode" style="width: 110px">
+          <el-option label="简体中文" value="zh-Hans" />
+          <el-option label="繁体中文" value="zh-Hant" />
+          <el-option label="日本語" value="ja" />
+          <el-option label="English" value="en" />
+        </el-select>
+        
+        <el-button style="margin-left: auto;" plain @click="resetFilters">重置</el-button>
+      </div>
     </div>
 
     <!-- 成绩数据表格展示 -->
     <el-table 
       :data="filteredData" 
       style="width: 100%" 
+      height="calc(100vh - 250px)"
       :default-sort="{ prop: 'ptt', order: 'descending' }"
       :row-class-name="tableRowClassName"
     >
@@ -58,11 +94,12 @@
       </el-table-column>
       
       <!-- 曲绘列 -->
-        <el-table-column label="曲绘" width="90" align="center">
+      <el-table-column label="曲绘" width="90" align="center">
         <template #default="scope">
           <el-image 
             class="song-jacket"
             :src="getJacketUrl(scope.row)" 
+            :alt="scope.row.songId"
             fit="cover"
             loading="lazy"
           >
@@ -77,15 +114,22 @@
       </el-table-column>
       
       <!-- 曲目名称列 -->
-      <el-table-column prop="title" label="曲目" min-width="200" sortable>
+      <el-table-column label="曲目 / 艺术家" min-width="200" sortable :sort-method="(a, b) => getLocalizedData(a.title_localized).text.localeCompare(getLocalizedData(b.title_localized).text)">
         <template #default="scope">
-          <div class="song-title">{{ scope.row.title }}</div>
-          <div class="song-id-sub">{{ scope.row.songId }}</div>
+          <div class="song-title">
+            {{ getLocalizedData(scope.row.title_localized).text }}
+            <span class="lang-fallback-badge">
+              {{ getLocalizedData(scope.row.title_localized).lang }}
+            </span>
+          </div>
+          <div class="song-id-sub">
+            {{ getLocalizedData(scope.row.artist_localized).text }}
+          </div>
         </template>
       </el-table-column>
       
       <!-- 难度列 -->
-      <el-table-column prop="songDifficulty" label="难度" width="110" align="center" sortable>
+      <el-table-column prop="songDifficulty" label="难度" width="120" align="center" sortable>
         <template #default="scope">
           <el-tag 
             size="small" 
@@ -95,7 +139,7 @@
               '--el-tag-bg-color': 'transparent'
             }"
           >
-            {{ scope.row.difficultyName }}
+            {{ scope.row.difficultyName }} {{ scope.row.ratingLevelStr }}
           </el-tag>
         </template>
       </el-table-column>
@@ -166,26 +210,129 @@ defineEmits(['reset'])
 
 // 搜索和过滤
 const searchQuery = ref('')
-// 默认全选所有难度 (0=Past, 1=Present, 2=Future, 3=Beyond, 4=Eternal)
-const filterDifficulty = ref([0, 1, 2, 3, 4])
+const filterDifficulty = ref([])
+const filterPack = ref([])
+const filterRating = ref([])
+const filterClearType = ref([])
+const filterScoreRange = ref([0, 10002222])
+const filterDateRange = ref(null)
+
+// 语言切换逻辑
+const currentLangCode = ref('zh-Hans')
+const langOrder = ['zh-Hans', 'zh-Hant', 'ja', 'en']
 
 /**
- * 带有排名的计算属性，并应用过滤器
+ * 智能获取多语言对象并在发生回退时提供感知信息
+ */
+const getLocalizedData = (locObj) => {
+  if (!locObj) return { text: 'Unknown', isFallback: false, lang: 'none' }
+  
+  const targetLang = currentLangCode.value
+  // 如果首选语言存在，直接返回且不是 fallback
+  if (locObj[targetLang]) {
+    return { text: locObj[targetLang], isFallback: false, lang: targetLang }
+  }
+  
+  // 否则，按降级顺序查找
+  for (const lang of langOrder) {
+    if (locObj[lang]) {
+      const displayLangCode = lang === 'zh-Hans' ? '简' : lang === 'zh-Hant' ? '繁' : lang === 'ja' ? 'JP' : 'EN'
+      return { text: locObj[lang], isFallback: true, lang: displayLangCode }
+    }
+  }
+  
+  // 极端情况：连常见语言都没有，随便挑一个存在的
+  const firstAvailable = Object.keys(locObj)[0]
+  if (firstAvailable) {
+    return { text: locObj[firstAvailable], isFallback: true, lang: firstAvailable.substring(0, 2).toUpperCase() }
+  }
+  
+  return { text: 'Unknown', isFallback: false, lang: 'none' }
+}
+
+// 提取数据中所有出现过的曲包和难度评级，供下拉框使用
+const uniquePacks = computed(() => {
+  const packsMap = new Map()
+  props.allData.forEach(d => {
+    if (!packsMap.has(d.packName)) {
+      packsMap.set(d.packName, d.packOrder)
+    }
+  })
+  // 按照官方 packlist.json 中的先后顺序排序
+  return Array.from(packsMap.keys()).sort((a, b) => packsMap.get(a) - packsMap.get(b))
+})
+
+const uniqueRatings = computed(() => {
+  const ratings = new Set(props.allData.map(d => d.ratingLevelStr))
+  return Array.from(ratings).sort((a, b) => {
+    // 处理带 "+" 号的字符串排序，如 "9+" > "9"
+    const valA = parseFloat(a) + (a.includes('+') ? 0.5 : 0)
+    const valB = parseFloat(b) + (b.includes('+') ? 0.5 : 0)
+    return valA - valB
+  })
+})
+
+const resetFilters = () => {
+  searchQuery.value = ''
+  filterDifficulty.value = [0, 1, 2, 3, 4]
+  filterPack.value = []
+  filterRating.value = []
+  filterClearType.value = []
+  filterScoreRange.value = [0, 10002222]
+  filterDateRange.value = null
+}
+
+/**
+ * 带有排名的计算属性，并应用超级过滤器
  */
 const filteredData = computed(() => {
   return props.allData.filter(row => {
-    // 按曲名或 ID 搜索
+    // 1. 搜索词匹配 (全语言 + search_title + search_artist)
     if (searchQuery.value) {
       const q = searchQuery.value.toLowerCase()
-      if (!row.title.toLowerCase().includes(q) && !row.songId.toLowerCase().includes(q)) {
-        return false
+      let match = false
+      
+      // 内置ID匹配
+      if (row.songId.toLowerCase().includes(q)) match = true
+      
+      // title匹配
+      if (!match && row.title_localized) {
+        match = Object.values(row.title_localized).some(t => typeof t === 'string' && t.toLowerCase().includes(q))
       }
+      if (!match && row.search_title) {
+        match = row.search_title.some(t => typeof t === 'string' && t.toLowerCase().includes(q))
+      }
+      
+      // artist匹配
+      if (!match && row.artist_localized) {
+        match = Object.values(row.artist_localized).some(a => typeof a === 'string' && a.toLowerCase().includes(q))
+      }
+      if (!match && row.search_artist) {
+        match = row.search_artist.some(a => typeof a === 'string' && a.toLowerCase().includes(q))
+      }
+      
+      if (!match) return false
     }
-    // 按难度过滤（多选：如果没勾选该难度，则过滤掉）
-    if (filterDifficulty.value && Array.isArray(filterDifficulty.value)) {
-      if (!filterDifficulty.value.includes(row.songDifficulty)) {
-        return false
-      }
+    // 2. 谱面分类 (PST/PRS...)
+    if (filterDifficulty.value.length > 0 && !filterDifficulty.value.includes(row.songDifficulty)) return false
+    // 3. 曲包
+    if (filterPack.value.length > 0 && !filterPack.value.includes(row.packName)) return false
+    // 4. 等级 (8, 9, 9+, 10...)
+    if (filterRating.value.length > 0 && !filterRating.value.includes(row.ratingLevelStr)) return false
+    // 5. 通关状态
+    if (filterClearType.value.length > 0 && !filterClearType.value.includes(row.clearType)) return false
+    // 6. 分数范围
+    if (row.score < filterScoreRange.value[0] || row.score > filterScoreRange.value[1]) return false
+    // 7. 游玩时间范围
+    if (filterDateRange.value && filterDateRange.value.length === 2) {
+      // row.date 是 Unix 秒级时间戳，需特殊处理 2000 年之前的默认值
+      if (row.date < 1000000000) return false // 没有确切日期的老记录，如果在选了时间范围的情况下默认过滤掉
+      
+      const startSec = Math.floor(filterDateRange.value[0].getTime() / 1000)
+      // 结束时间需要加一天以包含选择的最后一天
+      const endSec = Math.floor(filterDateRange.value[1].getTime() / 1000) + 86400 
+      
+      if (row.date < startSec || row.date > endSec) return false
     }
     return true
   })
@@ -241,9 +388,10 @@ const getClearTypeColor = (clearType) => {
  */
 const getJacketUrl = (row) => {
   // 提取出来的曲绘都在 /songs/{songId}/ 目录下
-  // 按照优先级: {difficulty}.jpg -> base.jpg
-  // 简易起见，暂用 base.jpg 作为默认展示
-  return `/songs/${row.songId}/base.jpg`
+  // row.jacketPath 由 ptts.js 根据官方 songlist 里的 jacketOverride 动态计算得出 (例如 base.avif 或 3.avif)
+  // 使用 import.meta.env.BASE_URL 确保在使用了 base 路径 (如 github pages) 时依然能正确加载图片
+  const baseUrl = import.meta.env.BASE_URL
+  return `${baseUrl}songs/${row.songId}/${row.jacketPath}`
 }
 </script>
 
@@ -262,11 +410,30 @@ const getJacketUrl = (row) => {
 
 .filter-toolbar {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 12px;
   margin-bottom: 20px;
   padding: 15px;
   background-color: var(--el-fill-color-light);
   border-radius: var(--el-border-radius-base);
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 13px;
+  color: var(--el-text-color-regular);
+  font-weight: bold;
+}
+
+.filter-separator {
+  margin: 0 4px;
+  color: var(--el-text-color-secondary);
 }
 
 .section-title {
@@ -305,6 +472,22 @@ const getJacketUrl = (row) => {
   font-size: 12px;
   color: var(--el-text-color-secondary);
   margin-top: 4px;
+}
+
+.lang-fallback-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 4px;
+  font-size: 10px;
+  line-height: 14px;
+  height: 14px;
+  color: var(--el-text-color-secondary);
+  background-color: var(--el-fill-color-dark);
+  border-radius: 4px;
+  font-weight: normal;
+  vertical-align: middle;
+  transform: translateY(-1px);
+  opacity: 0.8;
 }
 
 /* 根据难度定制带有极低透明度的表格行底色（完美兼容日间/夜间模式和 WCAG 标准） */

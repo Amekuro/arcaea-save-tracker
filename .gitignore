@@ -43,3 +43,4 @@ arcaea_*.apk
 arcaea_*/
 st3
 tmp_smartrte/
+extracted_assets/
