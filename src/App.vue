@@ -3,6 +3,17 @@
     <el-container>
       <el-header height="80px" class="main-header">
         <div class="header-inner">
+          <div class="header-left">
+            <a href="https://github.com/Amekuro/arcaea-save-tracker" target="_blank" rel="noopener noreferrer" class="header-link">
+              <el-icon :size="14"><LogoGithub /></el-icon>
+              <span>Amekuro/arcaea-save-tracker</span>
+            </a>
+            <div class="header-status" v-if="versionInfo">
+              <el-tag size="small" effect="plain" type="info">游戏 v{{ versionInfo.apk_version }}</el-tag>
+              <el-tag size="small" effect="plain" :type="versionInfo.constants_synced ? 'success' : 'warning'">定数{{ versionInfo.constants_synced ? '已同步' : '同步中' }}</el-tag>
+              <span style="color: var(--el-text-color-placeholder); font-size: 11px;">{{ formatDate(versionInfo.apk_updated_at) }}</span>
+            </div>
+          </div>
           <h1>Arcaea Save Tracker</h1>
           <div class="theme-switch">
             <el-radio-group v-model="currentTheme" size="small" @change="handleThemeChange">
@@ -15,7 +26,7 @@
         <p>基于 Vue 3 + Element Plus 的本地 st3 解析工具</p>
       </el-header>
       
-      <el-main class="main-content">
+      <el-main class="main-content" :class="{ 'is-empty': !isProcessed }">
         <!-- 尚未解析时，显示上传区域 -->
         <UploadSection 
           v-if="!isProcessed"
@@ -36,19 +47,37 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import UploadSection from './components/UploadSection.vue'
 import ResultTable from './components/ResultTable.vue'
 import { ElMessage } from 'element-plus'
+import { LogoGithub } from '@vicons/ionicons5'
 
 // 状态管理
 const isProcessed = ref(false)
 const allRecords = ref([])
 const b30Avg = ref(0)
 const maxPtt = ref(0)
+const versionInfo = ref(null)
 
 // 主题状态，从 localStorage 读取初始值
 const currentTheme = ref(localStorage.getItem('theme-setting') || 'auto')
+
+onMounted(async () => {
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}data/version.json`)
+    if (res.ok) {
+      versionInfo.value = await res.json()
+    }
+  } catch (e) {
+    // version.json 不存在或网络错误时静默忽略
+  }
+})
+
+const formatDate = (isoStr) => {
+  const d = new Date(isoStr)
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
 
 /**
  * 切换主题
@@ -83,11 +112,38 @@ const reset = () => {
 }
 </script>
 
+<style>
+/* 全局样式重置，确保 100vh 布局生效 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+</style>
+
 <style scoped>
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 12px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container :deep(.el-container) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.app-container :deep(.el-main) {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .main-header {
@@ -99,6 +155,34 @@ const reset = () => {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.header-left {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--el-text-color-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header-link:hover {
+  color: var(--el-color-primary);
+}
+
+.header-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .header-inner h1 {
@@ -124,5 +208,13 @@ const reset = () => {
   border-radius: var(--el-border-radius-base);
   box-shadow: var(--el-box-shadow-light);
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content.is-empty {
+  justify-content: center;
+  align-items: center;
 }
 </style>
+

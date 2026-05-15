@@ -120,31 +120,31 @@ const wrapperRef = ref(null)
 const contentRef = ref(null)
 let registration = null
 let resizeObs = null
-let intersectObs = null
 let mutationObs = null
+let intersectObs = null
 
 const check = () => {
   if (!wrapperRef.value || !contentRef.value) return
-
-  // 先临时重置 transform，否则 scrollWidth 会受到当前偏移量的影响
-  if (registration) {
-    contentRef.value.style.transform = ''
-  }
-
   const overflow = contentRef.value.scrollWidth - wrapperRef.value.offsetWidth
 
   if (overflow > 1) {
+    // 用 getBoundingClientRect 判断元素当前是否在视口内
+    // （IntersectionObserver 只在交叉状态变化时触发，无法覆盖"元素一直在视口内但 registration 新建"的场景）
+    const rect = wrapperRef.value.getBoundingClientRect()
+    const isVisible = rect.bottom > -50 && rect.top < (window.innerHeight + 50)
+
     if (!registration) {
       registration = {
         wrapperEl: wrapperRef.value,
         contentEl: contentRef.value,
         dist: overflow,
-        visible: false,
+        visible: isVisible,
         maskLeft: false,
         maskRight: false
       }
       register(registration)
     } else {
+      registration.visible = isVisible
       updateDist(registration, overflow)
     }
   } else {
@@ -160,19 +160,20 @@ const check = () => {
 onMounted(() => {
   nextTick(check)
 
+  // ResizeObserver: 监听容器尺寸变化
   resizeObs = new ResizeObserver(check)
   if (wrapperRef.value) resizeObs.observe(wrapperRef.value)
+  if (contentRef.value) resizeObs.observe(contentRef.value)
 
-  // 监听插槽内容文本变化（语言切换时 ResizeObserver 检测不到，因为 overflow:hidden 限制了布局尺寸）
-  mutationObs = new MutationObserver(check)
+  // MutationObserver: 兜底监听内容 DOM 变更（语言切换时 slot 文本变化，ResizeObserver 对 inline-flex 不可靠）
+  mutationObs = new MutationObserver(() => {
+    nextTick(check)
+  })
   if (contentRef.value) {
-    mutationObs.observe(contentRef.value, {
-      childList: true,
-      subtree: true,
-      characterData: true
-    })
+    mutationObs.observe(contentRef.value, { childList: true, subtree: true, characterData: true })
   }
 
+  // IntersectionObserver: 跳过不可见元素以节省 CPU
   intersectObs = new IntersectionObserver(
     ([entry]) => {
       if (registration) {

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.2",
+    "@vicons/ionicons5": "^0.13.0",
     "axios": "^1.16.1",
     "cheerio": "^1.2.0",
     "element-plus": "^2.14.0",

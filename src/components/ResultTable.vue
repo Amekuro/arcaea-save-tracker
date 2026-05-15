@@ -74,15 +74,16 @@
     </div>
 
     <!-- 成绩数据表格展示 -->
+    <div style="flex: 1; min-height: 0;">
     <el-table 
       :data="filteredData" 
       style="width: 100%" 
-      height="calc(100vh - 250px)"
+      height="100%"
       :default-sort="{ prop: 'ptt', order: 'descending' }"
       :row-class-name="tableRowClassName"
     >
       <!-- ID 列 -->
-      <el-table-column prop="id" label="ID" width="70" align="center" sortable />
+      <el-table-column prop="id" label="ID" width="65" align="center" sortable />
 
       <!-- 排名列 (使用原始数据的索引) -->
       <el-table-column prop="rank" label="排名" width="80" align="center" sortable>
@@ -94,7 +95,7 @@
       </el-table-column>
       
       <!-- 曲绘列 -->
-      <el-table-column label="曲绘" width="90" align="center">
+      <el-table-column label="曲绘" width="80" align="center">
         <template #default="scope">
           <el-image 
             class="song-jacket"
@@ -114,7 +115,7 @@
       </el-table-column>
       
       <!-- 曲目名称列 -->
-      <el-table-column label="曲目 / 艺术家" min-width="200" sortable :sort-method="(a, b) => getLocalizedData(a.title_localized).text.localeCompare(getLocalizedData(b.title_localized).text)">
+      <el-table-column label="曲目 / 艺术家" min-width="200" header-align="center" sortable :sort-method="(a, b) => getLocalizedData(a.title_localized).text.localeCompare(getLocalizedData(b.title_localized).text)">
         <template #default="scope">
           <MarqueeText class="song-title">
             {{ getLocalizedData(scope.row.title_localized).text }}
@@ -129,7 +130,7 @@
       </el-table-column>
       
       <!-- 难度列 -->
-      <el-table-column prop="songDifficulty" label="难度" width="120" align="center" sortable>
+      <el-table-column prop="songDifficulty" label="难度" width="110" align="center" sortable>
         <template #default="scope">
           <el-tag 
             size="small" 
@@ -145,14 +146,14 @@
       </el-table-column>
       
       <!-- 定数列表 -->
-      <el-table-column prop="constant" label="定数" width="100" align="center" sortable>
+      <el-table-column prop="constant" label="定数" width="80" align="center" sortable>
         <template #default="scope">
           {{ scope.row.constant.toFixed(1) }}
         </template>
       </el-table-column>
       
       <!-- 分数与评级列 -->
-      <el-table-column prop="score" label="成绩 & 评级" min-width="200" sortable>
+      <el-table-column prop="score" label="成绩 & 评级" min-width="190" header-align="center" sortable>
         <template #default="scope">
           <div style="display: flex; align-items: center; gap: 8px;">
             <span style="font-family: monospace; font-size: 16px; font-weight: bold;">{{ formatScore(scope.row.score) }}</span>
@@ -172,20 +173,21 @@
       </el-table-column>
       
       <!-- 游玩日期列 -->
-      <el-table-column prop="date" label="游玩时间" width="150" align="center" sortable>
+      <el-table-column prop="date" label="游玩时间" width="130" align="center" sortable>
         <template #default="scope">
           <span style="font-size: 12px; color: var(--el-text-color-secondary);">{{ scope.row.playDate }}</span>
         </template>
       </el-table-column>
       
       <!-- 单曲 PTT 列 -->
-      <el-table-column prop="ptt" label="单曲 PTT" width="140" align="center" sortable>
+      <el-table-column prop="ptt" label="单曲PTT" width="120" align="center" sortable>
         <template #default="scope">
           <span style="font-weight: bold; color: var(--el-color-primary); font-size: 15px;">{{ formatPtt(scope.row.ptt) }}</span>
         </template>
       </el-table-column>
       
     </el-table>
+    </div>
   </div>
 </template>
 
@@ -408,6 +410,10 @@ const getJacketUrl = (row) => {
 /* 仅仅保留布局和结构所必须的 CSS，文字颜色尽量使用 Element 提供的 CSS 变量 */
 .result-section {
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .header-actions {
@@ -415,16 +421,18 @@ const getJacketUrl = (row) => {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  flex-shrink: 0;
 }
 
 .filter-toolbar {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 15px;
   background-color: var(--el-fill-color-light);
   border-radius: var(--el-border-radius-base);
+  flex-shrink: 0;
 }
 
 .filter-row {
@@ -454,8 +462,8 @@ const getJacketUrl = (row) => {
 }
 
 .song-jacket {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   border-radius: var(--el-border-radius-base);
   border: 1px solid var(--el-border-color-lighter);
 }
