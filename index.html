@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/favicon.ico" rel="icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="xCbAK0p9LmYWTS_kPzHElWViAT8sCk8MQB_fqWwz544" name="google-site-verification"/>
     <title>Arcaea Save Tracker</title>
     <!-- 同步执行的主题初始化脚本，阻止白屏闪烁 (FOUC) -->
     <script>
-      (function() {
-        try {
-          var savedTheme = localStorage.getItem('theme-setting');
-          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (savedTheme === 'dark' || (savedTheme !== 'light' && prefersDark)) {
-            document.documentElement.classList.add('dark');
-            // 顺便给底色抹黑，防止 CSS 还没加载时的瞬间白屏
-            document.documentElement.style.backgroundColor = '#141414';
-          }
-        } catch (e) {}
-      })();
+        (function () {
+            try {
+                var savedTheme = localStorage.getItem('theme-setting');
+                var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (savedTheme === 'dark' || (savedTheme !== 'light' && prefersDark)) {
+                    document.documentElement.classList.add('dark');
+                    // 顺便给底色抹黑，防止 CSS 还没加载时的瞬间白屏
+                    document.documentElement.style.backgroundColor = '#141414';
+                }
+            } catch (e) {
+            }
+        })();
     </script>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+</head>
+<body>
+<div id="app"></div>
+<script src="/src/main.js" type="module"></script>
+</body>
 </html>
