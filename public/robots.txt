@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amekuro.github.io/arcaea-save-tracker/sitemap.xml
