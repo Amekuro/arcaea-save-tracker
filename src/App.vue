@@ -14,7 +14,7 @@
               <span style="color: var(--el-text-color-placeholder); font-size: 11px;">{{ formatDate(versionInfo.apk_updated_at) }}</span>
             </div>
           </div>
-          <h1>Arcaea Save Tracker</h1>
+          <h2>Arcaea Save Tracker</h2>
           <div class="theme-switch">
             <el-radio-group v-model="currentTheme" size="small" @change="handleThemeChange">
               <el-radio-button value="light">浅色</el-radio-button>
@@ -185,7 +185,7 @@ html, body {
   gap: 6px;
 }
 
-.header-inner h1 {
+.header-inner h2 {
   margin: 0;
   color: var(--el-color-primary);
   font-size: 32px;
