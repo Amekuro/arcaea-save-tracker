@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.2",
+    "@unhead/vue": "^3.1.0",
     "@vicons/ionicons5": "^0.13.0",
     "axios": "^1.16.1",
     "cheerio": "^1.2.0",
@@ -21,7 +22,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.6",
     "vite": "^8.0.8",
-    "vite-plugin-vue-devtools": "^8.1.1"
+    "vite-plugin-vue-devtools": "^8.1.1",
+    "vite-ssg": "^28.3.0"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"

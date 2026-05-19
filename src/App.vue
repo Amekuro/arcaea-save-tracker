@@ -60,10 +60,11 @@ const b30Avg = ref(0)
 const maxPtt = ref(0)
 const versionInfo = ref(null)
 
-// 主题状态，从 localStorage 读取初始值
-const currentTheme = ref(localStorage.getItem('theme-setting') || 'auto')
+// 主题状态，SSR 时默认 'auto'，客户端 onMounted 后读取真实值
+const currentTheme = ref('auto')
 
 onMounted(async () => {
+  currentTheme.value = localStorage.getItem('theme-setting') || 'auto'
   try {
     const res = await fetch(`${import.meta.env.BASE_URL}data/version.json`)
     if (res.ok) {
