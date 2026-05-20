@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT_DIR = path.resolve(__dirname, '..')
 const PUBLIC_DIR = path.join(ROOT_DIR, 'public')
-const VERSION_FILE = path.join(PUBLIC_DIR, 'version.json')
+const VERSION_FILE = path.join(PUBLIC_DIR, 'data', 'version.json')
 const TEMP_VERSION_FILE = path.join(ROOT_DIR, 'latest_version.txt')
 
 async function run() {
