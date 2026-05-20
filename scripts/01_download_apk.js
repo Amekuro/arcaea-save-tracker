@@ -31,7 +31,7 @@ async function run() {
     let localVersion = 'none'
     if (fs.existsSync(VERSION_FILE)) {
       const versionData = JSON.parse(fs.readFileSync(VERSION_FILE, 'utf-8'))
-      localVersion = versionData.version || 'none'
+      localVersion = versionData.apk_version || 'none'
     }
     
     console.log(`📦 当前本地缓存版本号: ${localVersion}`)
