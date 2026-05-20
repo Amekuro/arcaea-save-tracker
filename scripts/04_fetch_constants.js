@@ -11,6 +11,12 @@ const DEST_PATH = path.join(__dirname, '../public/data/ChartConstant.json')
 const VERSION_PATH = path.join(__dirname, '../public/data/version.json')
 const SONGLIST_PATH = path.join(__dirname, '../public/data/songlist.json')
 
+// 如果 APK 未更新，跳过定数表拉取与 version.json 写入
+if (fs.existsSync(path.join(__dirname, '../.skip_update'))) {
+  console.log('⏩ 检测到 .skip_update 标记，APK 未更新，跳过定数表同步步骤。')
+  process.exit(0)
+}
+
 console.log('🌐 开始检查定数表同步状态...')
 
 try {
