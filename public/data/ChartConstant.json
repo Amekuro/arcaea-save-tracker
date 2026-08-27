@@ -4757,7 +4757,7 @@
       "old": false
     },
     {
-      "constant": 9.9,
+      "constant": 10,
       "old": false
     }
   ],
@@ -8122,7 +8122,7 @@
       "old": false
     },
     {
-      "constant": 8.8,
+      "constant": 8.6,
       "old": false
     },
     null,
@@ -8410,6 +8410,25 @@
       "old": false
     }
   ],
+  "diein": [
+    {
+      "constant": 5,
+      "old": false
+    },
+    {
+      "constant": 8.3,
+      "old": false
+    },
+    {
+      "constant": 10.3,
+      "old": false
+    },
+    null,
+    {
+      "constant": 11.1,
+      "old": false
+    }
+  ],
   "chronologia": [
     {
       "constant": 4.5,
@@ -8428,6 +8447,136 @@
       "constant": 10.8,
       "old": false
     }
+  ],
+  "balor": [
+    {
+      "constant": 3.5,
+      "old": false
+    },
+    {
+      "constant": 7.5,
+      "old": false
+    },
+    {
+      "constant": 9.5,
+      "old": false
+    },
+    null,
+    {
+      "constant": 10.1,
+      "old": false
+    }
+  ],
+  "dreadarea": [
+    {
+      "constant": 5.5,
+      "old": false
+    },
+    {
+      "constant": 8.3,
+      "old": false
+    },
+    {
+      "constant": 10.3,
+      "old": false
+    },
+    {
+      "constant": 11.4,
+      "old": false
+    },
+    null
+  ],
+  "un": [
+    {
+      "constant": 4.5,
+      "old": false
+    },
+    {
+      "constant": 7.8,
+      "old": false
+    },
+    {
+      "constant": 9.9,
+      "old": false
+    },
+    null,
+    {
+      "constant": 10.9,
+      "old": false
+    }
+  ],
+  "rivenpilgrim": [
+    {
+      "constant": 5.5,
+      "old": false
+    },
+    {
+      "constant": 8.5,
+      "old": false
+    },
+    {
+      "constant": 10.4,
+      "old": false
+    },
+    {
+      "constant": 11.5,
+      "old": false
+    },
+    null
+  ],
+  "cataclysmcry": [
+    {
+      "constant": 6.5,
+      "old": false
+    },
+    {
+      "constant": 8.8,
+      "old": false
+    },
+    {
+      "constant": 10.6,
+      "old": false
+    },
+    {
+      "constant": 11.8,
+      "old": false
+    },
+    null
+  ],
+  "deinosphainein": [
+    {
+      "constant": 7.5,
+      "old": false
+    },
+    {
+      "constant": 9.6,
+      "old": false
+    },
+    {
+      "constant": 10.9,
+      "old": false
+    },
+    {
+      "constant": 12,
+      "old": false
+    },
+    null
+  ],
+  "ember": [
+    {
+      "constant": 5,
+      "old": false
+    },
+    {
+      "constant": 8.1,
+      "old": false
+    },
+    {
+      "constant": 9.9,
+      "old": false
+    },
+    null,
+    null
   ],
   "particlearts": [
     {
