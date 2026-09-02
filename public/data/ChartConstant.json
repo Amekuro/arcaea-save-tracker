@@ -8578,6 +8578,21 @@
     null,
     null
   ],
+  "sacrosanct": [
+    {
+      "constant": 6.5,
+      "old": false
+    },
+    {
+      "constant": 9.6,
+      "old": false
+    },
+    {
+      "constant": 10.7,
+      "old": false
+    },
+    null
+  ],
   "particlearts": [
     {
       "constant": 3.5
