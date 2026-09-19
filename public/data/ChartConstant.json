@@ -8591,7 +8591,27 @@
       "constant": 10.7,
       "old": false
     },
+    null,
     null
+  ],
+  "chateaudecartes": [
+    {
+      "constant": 4.5,
+      "old": false
+    },
+    {
+      "constant": 7.8,
+      "old": false
+    },
+    {
+      "constant": 9.4,
+      "old": false
+    },
+    null,
+    {
+      "constant": 10.3,
+      "old": false
+    }
   ],
   "particlearts": [
     {
